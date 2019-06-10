@@ -6,22 +6,23 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/et_ip"
+        android:id="@+id/et_city"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="请输入城市名"/>
     
     <Button
-        android:id="@+id/btn_ip"
+        android:id="@+id/btn_air"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_ip"
-        android:text="IP查询"/>
+        android:layout_below="@+id/et_city"
+        android:text="空气质量查询"/>
 
     <TextView
-        android:id="@+id/tv_ip"
+        android:id="@+id/tv_air"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_ip"
+        android:layout_below="@+id/btn_air"
         android:textSize="16sp"
         android:textColor="#000"/>
 

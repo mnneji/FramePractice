@@ -1,6 +1,6 @@
 package com.example.dell.framepratice.net;
 
-import com.example.dell.framepratice.bean.IPBean;
+import com.example.dell.framepratice.bean.AirBean;
 import com.example.dell.framepratice.net.netListener.CallBackLis;
 
 import java.util.HashMap;
@@ -12,13 +12,14 @@ public class HttpRequest {
 
     /**
      * 获取城市空气质量
-     * @param ip
+     * @param city
      * @param callBackLis
      */
-    public static void getIpAddress(String ip, CallBackLis<IPBean> callBackLis) {
+    public static void getIpAddress(String city, CallBackLis<AirBean> callBackLis) {
         Map<String, String> paraMap = new HashMap<>();
-        paraMap.put("ip", ip);
-        Observable<IPBean> observable = RetrofitHelper.getInstance().getAirQuanlity(paraMap);
+        paraMap.put("city", city);
+        paraMap.put("key", "31f21e0443c1e110184c84d160124eaf");
+        Observable<AirBean> observable = RetrofitHelper.getInstance().getAirQuanlity(paraMap);
         HttpCall.doCall(observable, callBackLis);
     }
 

@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.dell.framepratice.R;
-import com.example.dell.framepratice.bean.IPBean;
+import com.example.dell.framepratice.bean.AirBean;
 import com.example.dell.framepratice.net.HttpRequest;
 import com.example.dell.framepratice.net.netListener.CallBackLis;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
@@ -20,12 +20,12 @@ import butterknife.OnClick;
 
 public class MainActivity extends RxAppCompatActivity {
 
-    @BindView(R.id.et_ip)
-    EditText etIp;
-    @BindView(R.id.btn_ip)
-    Button btnIp;
-    @BindView(R.id.tv_ip)
-    TextView tvIp;
+    @BindView(R.id.et_city)
+    EditText etCity;
+    @BindView(R.id.btn_air)
+    Button btnAir;
+    @BindView(R.id.tv_air)
+    TextView tvAir;
     @BindView(R.id.pb)
     ProgressBar pb;
 
@@ -36,20 +36,20 @@ public class MainActivity extends RxAppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.btn_ip)
+    @OnClick(R.id.btn_air)
     public void onViewClicked() {
         pb.setVisibility(View.VISIBLE);
-        HttpRequest.getIpAddress(etIp.getText().toString(), new CallBackLis<IPBean>() {
+        HttpRequest.getIpAddress(etCity.getText().toString(), new CallBackLis<AirBean>() {
             @Override
-            public void onSuccess(IPBean result) {
+            public void onSuccess(AirBean result) {
                 pb.setVisibility(View.GONE);
-                tvIp.setText(result.getData().getCity());
+                tvAir.setText(result.getResult().get(0).getCitynow().toString());
             }
 
             @Override
             public void onFailure(String error) {
                 pb.setVisibility(View.GONE);
-                tvIp.setText(error);
+                tvAir.setText(error);
             }
         });
     }

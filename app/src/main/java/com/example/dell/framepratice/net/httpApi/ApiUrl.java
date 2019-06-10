@@ -1,6 +1,6 @@
 package com.example.dell.framepratice.net.httpApi;
 
-import com.example.dell.framepratice.bean.IPBean;
+import com.example.dell.framepratice.bean.AirBean;
 
 import java.util.Map;
 
@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 
 public interface ApiUrl {
-    @GET("getIpInfo.php")
-    Observable<IPBean> getAirQuanlity(@QueryMap Map<String, String> paraMap);
+    @GET("cityair")
+    Observable<AirBean> getAirQuanlity(@QueryMap Map<String, String> paraMap);
 }
