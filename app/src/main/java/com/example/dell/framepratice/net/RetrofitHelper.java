@@ -2,7 +2,6 @@ package com.example.dell.framepratice.net;
 
 import com.example.dell.framepratice.net.httpApi.ApiUrl;
 import com.example.dell.framepratice.Constant;
-import com.example.dell.framepratice.LogInterceptor;
 
 import java.util.concurrent.TimeUnit;
 

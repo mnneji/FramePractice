@@ -1,4 +1,4 @@
-package com.example.dell.framepratice.bean;
+package com.example.dell.framepratice.model;
 
 import com.google.gson.annotations.SerializedName;
 

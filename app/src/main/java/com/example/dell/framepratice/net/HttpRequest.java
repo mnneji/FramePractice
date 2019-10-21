@@ -1,6 +1,6 @@
 package com.example.dell.framepratice.net;
 
-import com.example.dell.framepratice.bean.AirBean;
+import com.example.dell.framepratice.model.AirBean;
 import com.example.dell.framepratice.net.netListener.CallBackLis;
 
 import java.util.HashMap;
