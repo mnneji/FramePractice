@@ -1,4 +1,4 @@
-package com.example.dell.framepratice;
+package com.example.dell.framepratice.utils;
 
 public class Constant {
     public static final int DEFAULT_TIME = 10;
