@@ -34,6 +34,14 @@ public class MainActivity extends BaseDataBindActivity<ActivityMainBinding> {
         binding.btnImgDownload.setOnClickListener(v -> {
             DownloadImageActivity.actionStart(this);
         });
+
+        binding.btnCache.setOnClickListener(v -> {
+            CacheActivity.actionStart(this);
+        });
+
+        binding.btnDoc.setOnClickListener(v -> {
+            DocViewActivity.actionStart(this);
+        });
     }
 
 

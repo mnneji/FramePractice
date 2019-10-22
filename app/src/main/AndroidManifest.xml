@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DownloadImageActivity"></activity>
+        <activity android:name=".activity.DocViewActivity"></activity>
+        <activity android:name=".activity.CacheActivity" />
+        <activity android:name=".activity.DownloadImageActivity" />
         <activity android:name=".activity.AirQualityActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
@@ -24,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
