@@ -26,3 +26,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    // SDK and Tools
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    applicationId = "com.example.dell.framepratice"
+
+    // Dependencies
+}
