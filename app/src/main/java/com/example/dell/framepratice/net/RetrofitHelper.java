@@ -50,7 +50,7 @@ public class RetrofitHelper {
                 .addConverterFactory(GsonConverterFactory.create())
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                .client(initOkHttp())
+                .client(client)
                 .build();
     }
 
