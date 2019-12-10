@@ -1,6 +1,4 @@
-package com.example.dell.framepratice.activity;
-
-import android.view.View;
+package com.example.dell.framepratice.ui.activity;
 
 import com.example.dell.framepratice.R;
 import com.example.dell.framepratice.base.BaseDataBindActivity;

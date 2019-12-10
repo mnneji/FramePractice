@@ -1,10 +1,8 @@
-package com.example.dell.framepratice.activity;
+package com.example.dell.framepratice.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.telecom.Call;
+
 import android.view.View;
 
 import com.example.dell.framepratice.R;

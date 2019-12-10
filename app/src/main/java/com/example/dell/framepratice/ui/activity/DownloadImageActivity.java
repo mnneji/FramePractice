@@ -1,13 +1,10 @@
-package com.example.dell.framepratice.activity;
+package com.example.dell.framepratice.ui.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.example.dell.framepratice.R;
 import com.example.dell.framepratice.base.BaseDataBindActivity;
@@ -19,7 +16,6 @@ import com.example.dell.framepratice.utils.UriUtil;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.io.File;
-import java.net.URI;
 
 import io.reactivex.functions.Consumer;
 

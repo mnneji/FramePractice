@@ -1,7 +1,7 @@
 package com.example.dell.framepratice.base;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 import android.os.Bundle;
 
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;

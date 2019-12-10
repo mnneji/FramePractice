@@ -1,26 +1,15 @@
-package com.example.dell.framepratice.activity;
+package com.example.dell.framepratice.ui.activity;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
 import android.text.TextUtils;
 
 import com.example.dell.framepratice.R;
 import com.example.dell.framepratice.base.BaseDataBindActivity;
 import com.example.dell.framepratice.databinding.ActivityCacheBinding;
-import com.example.dell.framepratice.net.Download.DownloadRetrofitHelper;
-import com.example.dell.framepratice.net.Download.FileCallBackLis;
 import com.example.dell.framepratice.utils.CacheUtil;
 import com.example.dell.framepratice.utils.ToastUtil;
-import com.tbruyelle.rxpermissions2.RxPermissions;
-
-import java.io.File;
-
-import io.reactivex.functions.Consumer;
 
 public class CacheActivity extends BaseDataBindActivity<ActivityCacheBinding> {
 

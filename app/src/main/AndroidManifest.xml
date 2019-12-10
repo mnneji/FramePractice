@@ -15,11 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DocViewActivity"></activity>
-        <activity android:name=".activity.CacheActivity" />
-        <activity android:name=".activity.DownloadImageActivity" />
-        <activity android:name=".activity.AirQualityActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".ui.activity.DocViewActivity"></activity>
+        <activity android:name=".ui.activity.CacheActivity" />
+        <activity android:name=".ui.activity.DownloadImageActivity" />
+        <activity android:name=".ui.activity.AirQualityActivity" />
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +28,7 @@
         </activity>
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
